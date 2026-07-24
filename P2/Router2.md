@@ -61,3 +61,6 @@ ip link set eth1 up
    bridge fdb show
 #   (from host-2) 
     ping 30.1.1.1   #-> full end-to-end test again
+
+#if brodcast is not showing, check the following:
+   ip neigh flush all #in host-1, host-2
