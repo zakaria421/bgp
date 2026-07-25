@@ -19,8 +19,6 @@
 - **Bridge** — a virtual switch built in software; connects two interfaces (e.g. a
   host-facing interface and a VXLAN tunnel interface) so traffic can flow between
   them.
-- **`master` (bridge port)** — the setting that attaches an interface to a bridge as
-  one of its "ports" (`ip link set <iface> master br0`).
 - **Static / unicast VXLAN mode** — the tunnel destination is hardcoded by hand
   using `remote <ip>`; simple, but doesn't scale to many routers.
 - **Dynamic / multicast VXLAN mode** — the tunnel uses a multicast `group` address

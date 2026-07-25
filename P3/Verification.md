@@ -1,7 +1,7 @@
 # On any router - confirm OSPF has built routes to the other loopbacks/links:
 do sh ip route
 
-# On the spine - confirm all 3 leafs connected (look for "Established" / uptime, not "Active"):
+# On the spine - confirm all 3 leafs connected 
 do sh bgp summary
 
 # On any leaf - confirm its single session to the spine is up:
